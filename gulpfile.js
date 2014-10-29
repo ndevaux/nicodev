@@ -3,7 +3,8 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     plumber = require('gulp-plumber')
     gutil = require('gulp-util'),
-    notify = require('gulp-notify');
+    notify = require('gulp-notify'),
+    livereload = require('gulp-livereload');
 
 var onError = function (err) {
     gutil.beep();
@@ -20,7 +21,7 @@ gulp.task('styles', function() {
         }))
         //.pipe(notify('SASS compilé !'))
         .pipe(sass({
-            style: 'compressed',
+            style: 'expanded',
             lineNumbers: true,
             require: ['susy', 'breakpoint']
         }))
