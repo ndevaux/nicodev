@@ -1,4 +1,4 @@
-output_style: compact
+#output_style: compact
 
 require:
   - susy
