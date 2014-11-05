@@ -1,7 +1,20 @@
 .wrapper {
+  background: lightyellow;
   @include container(90%);
 }
-
+// ==========================================================================
+// Layout gauche/droite
+// ==========================================================================
+.content-left {
+  @include span(8);
+}
+.content-right {
+  @include span(3 last);
+}
+.rss-subscribe {
+  @include break;
+  @include span(12);
+}
 /**
  * Site header
  */
@@ -178,6 +191,9 @@
 
 .page-heading {
   font-size : 20px;
+  @include breakpoint($small) {
+      font-size: 2em;
+  }
 }
 
 .post-list {

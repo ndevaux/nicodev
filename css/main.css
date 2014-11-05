@@ -172,6 +172,7 @@ pre > code {
 
 /* line 1, ../partials/base/_layout.scss */
 .wrapper {
+  background: lightyellow;
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -183,10 +184,38 @@ pre > code {
   clear: both;
 }
 
+/* line 8, ../partials/base/_layout.scss */
+.content-left {
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 1.38889%;
+  padding-right: 1.38889%;
+}
+
+/* line 11, ../partials/base/_layout.scss */
+.content-right {
+  box-sizing: border-box;
+  width: 25%;
+  float: right;
+  padding-left: 1.38889%;
+  padding-right: 1.38889%;
+}
+
+/* line 14, ../partials/base/_layout.scss */
+.rss-subscribe {
+  clear: both;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 1.38889%;
+  padding-right: 1.38889%;
+}
+
 /**
  * Site header
  */
-/* line 8, ../partials/base/_layout.scss */
+/* line 21, ../partials/base/_layout.scss */
 .site-header {
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
@@ -194,19 +223,19 @@ pre > code {
   position: relative;
 }
 
-/* line 17, ../partials/base/_layout.scss */
+/* line 30, ../partials/base/_layout.scss */
 .site-title {
   font-size: 26px;
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
 }
-/* line 23, ../partials/base/_layout.scss */
+/* line 36, ../partials/base/_layout.scss */
 .site-title, .site-title:visited {
   color: #424242;
 }
 
-/* line 32, ../partials/base/_layout.scss */
+/* line 45, ../partials/base/_layout.scss */
 .site-nav {
   position: absolute;
   top: 9px;
@@ -216,13 +245,13 @@ pre > code {
   border-radius: 5px;
   text-align: right;
 }
-/* line 41, ../partials/base/_layout.scss */
+/* line 54, ../partials/base/_layout.scss */
 .site-nav:hover .trigger {
   display: block;
   padding-bottom: 5px;
 }
 @media (min-width: 600px) {
-  /* line 32, ../partials/base/_layout.scss */
+  /* line 45, ../partials/base/_layout.scss */
   .site-nav {
     position: relative;
     top: 12px;
@@ -231,23 +260,23 @@ pre > code {
   }
 }
 
-/* line 53, ../partials/base/_layout.scss */
+/* line 66, ../partials/base/_layout.scss */
 .trigger {
   clear: both;
   display: none;
 }
 @media (min-width: 600px) {
-  /* line 53, ../partials/base/_layout.scss */
+  /* line 66, ../partials/base/_layout.scss */
   .trigger {
     display: block;
   }
-  /* line 57, ../partials/base/_layout.scss */
+  /* line 70, ../partials/base/_layout.scss */
   .trigger a {
     display: inline-block;
   }
 }
 
-/* line 64, ../partials/base/_layout.scss */
+/* line 77, ../partials/base/_layout.scss */
 .menu-icon {
   display: block;
   float: right;
@@ -257,35 +286,35 @@ pre > code {
   padding-top: 10px;
   text-align: center;
 }
-/* line 73, ../partials/base/_layout.scss */
+/* line 86, ../partials/base/_layout.scss */
 .menu-icon > svg {
   width: 18px;
   height: 15px;
 }
-/* line 77, ../partials/base/_layout.scss */
+/* line 90, ../partials/base/_layout.scss */
 .menu-icon > svg path {
   fill: #424242;
 }
 @media (min-width: 600px) {
-  /* line 64, ../partials/base/_layout.scss */
+  /* line 77, ../partials/base/_layout.scss */
   .menu-icon {
     display: none;
   }
 }
 
-/* line 86, ../partials/base/_layout.scss */
+/* line 99, ../partials/base/_layout.scss */
 .page-link {
   display: block;
   padding: 5px 10px;
 }
 @media (min-width: 600px) {
-  /* line 86, ../partials/base/_layout.scss */
+  /* line 99, ../partials/base/_layout.scss */
   .page-link {
     padding: 5px 5px;
     color: #111;
     line-height: 1.5;
   }
-  /* line 94, ../partials/base/_layout.scss */
+  /* line 107, ../partials/base/_layout.scss */
   .page-link:not(:first-child) {
     margin-left: 20px;
   }
@@ -294,68 +323,68 @@ pre > code {
 /**
  * Site footer
  */
-/* line 107, ../partials/base/_layout.scss */
+/* line 120, ../partials/base/_layout.scss */
 .site-footer {
   border-top: 1px solid #e8e8e8;
   padding: 30px 0;
 }
 
-/* line 112, ../partials/base/_layout.scss */
+/* line 125, ../partials/base/_layout.scss */
 .footer-heading {
   font-size: 18px;
   margin-bottom: 15px;
 }
 
-/* line 117, ../partials/base/_layout.scss */
+/* line 130, ../partials/base/_layout.scss */
 .contact-list,
 .social-media-list {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 123, ../partials/base/_layout.scss */
+/* line 136, ../partials/base/_layout.scss */
 .footer-col-wrapper {
   font-size: 15px;
   color: #828282;
   margin-left: -15px;
 }
 
-/* line 130, ../partials/base/_layout.scss */
+/* line 143, ../partials/base/_layout.scss */
 .footer-col {
   float: left;
   margin-bottom: 15px;
   padding-left: 15px;
 }
 
-/* line 136, ../partials/base/_layout.scss */
+/* line 149, ../partials/base/_layout.scss */
 .footer-col-1 {
   width: calc(35% - (30px / 2));
 }
 
-/* line 141, ../partials/base/_layout.scss */
+/* line 154, ../partials/base/_layout.scss */
 .footer-col-2 {
   width: calc(20% - (30px / 2));
 }
 
-/* line 146, ../partials/base/_layout.scss */
+/* line 159, ../partials/base/_layout.scss */
 .footer-col-3 {
   width: calc(45% - (30px / 2));
 }
 
 @media (min-width: 800px) {
-  /* line 152, ../partials/base/_layout.scss */
+  /* line 165, ../partials/base/_layout.scss */
   .footer-col-1,
   .footer-col-2 {
     width: calc(50% - (30px / 2));
   }
 
-  /* line 158, ../partials/base/_layout.scss */
+  /* line 171, ../partials/base/_layout.scss */
   .footer-col-3 {
     width: calc(100% - (30px / 2));
   }
 }
 @media (min-width: 600px) {
-  /* line 165, ../partials/base/_layout.scss */
+  /* line 178, ../partials/base/_layout.scss */
   .footer-col {
     float: none;
     width: calc(100% - (30px / 2));
@@ -364,33 +393,39 @@ pre > code {
 /**
  * Page content
  */
-/* line 175, ../partials/base/_layout.scss */
+/* line 188, ../partials/base/_layout.scss */
 .page-content {
   padding: 30px 0;
 }
 
-/* line 179, ../partials/base/_layout.scss */
+/* line 192, ../partials/base/_layout.scss */
 .page-heading {
   font-size: 20px;
 }
+@media (min-width: 600px) {
+  /* line 192, ../partials/base/_layout.scss */
+  .page-heading {
+    font-size: 2em;
+  }
+}
 
-/* line 183, ../partials/base/_layout.scss */
+/* line 199, ../partials/base/_layout.scss */
 .post-list {
   margin-left: 0;
   list-style: none;
 }
-/* line 187, ../partials/base/_layout.scss */
+/* line 203, ../partials/base/_layout.scss */
 .post-list > li {
   margin-bottom: 30px;
 }
 
-/* line 192, ../partials/base/_layout.scss */
+/* line 208, ../partials/base/_layout.scss */
 .post-meta {
   font-size: 14px;
   color: #828282;
 }
 
-/* line 197, ../partials/base/_layout.scss */
+/* line 213, ../partials/base/_layout.scss */
 .post-link {
   display: block;
   font-size: 24px;
@@ -399,54 +434,54 @@ pre > code {
 /**
  * Posts
  */
-/* line 205, ../partials/base/_layout.scss */
+/* line 221, ../partials/base/_layout.scss */
 .post-header {
   margin-bottom: 30px;
 }
 
-/* line 209, ../partials/base/_layout.scss */
+/* line 225, ../partials/base/_layout.scss */
 .post-title {
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1;
 }
 @media (min-width: 800px) {
-  /* line 209, ../partials/base/_layout.scss */
+  /* line 225, ../partials/base/_layout.scss */
   .post-title {
     font-size: 36px;
   }
 }
 
-/* line 219, ../partials/base/_layout.scss */
+/* line 235, ../partials/base/_layout.scss */
 .post-content {
   margin-bottom: 30px;
 }
-/* line 222, ../partials/base/_layout.scss */
+/* line 238, ../partials/base/_layout.scss */
 .post-content h2 {
   font-size: 32px;
 }
 @media (min-width: 800px) {
-  /* line 222, ../partials/base/_layout.scss */
+  /* line 238, ../partials/base/_layout.scss */
   .post-content h2 {
     font-size: 28px;
   }
 }
-/* line 230, ../partials/base/_layout.scss */
+/* line 246, ../partials/base/_layout.scss */
 .post-content h3 {
   font-size: 26px;
 }
 @media (min-width: 800px) {
-  /* line 230, ../partials/base/_layout.scss */
+  /* line 246, ../partials/base/_layout.scss */
   .post-content h3 {
     font-size: 22px;
   }
 }
-/* line 238, ../partials/base/_layout.scss */
+/* line 254, ../partials/base/_layout.scss */
 .post-content h4 {
   font-size: 20px;
 }
 @media (min-width: 800px) {
-  /* line 238, ../partials/base/_layout.scss */
+  /* line 254, ../partials/base/_layout.scss */
   .post-content h4 {
     font-size: 18px;
   }
