@@ -1,23 +1,37 @@
 ---
 layout: default
+title: titre perso
+header: Nicolas Devaux, développeur
 ---
 
 <div class="home">
+    <div class="content-left">
+        <h1 class="page-heading">{{ page.header }}</h1>
+        <h2>Les variables globales</h2>
+        <ul>
+            <li>{{site.time}}</li>
+            <li>{{page.title}}</li>
+            <li>{{page.url}}</li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ea eius id illo iste, iure praesentium quaerat
+           sit temporibus voluptatibus! Alias consectetur deleniti enim ipsum officiis, quidem quos! Eaque, enim.
+        </p>
+    </div>
+    <div class="content-right">
+        <ul class="post-list">
+            {% for post in site.posts %}
+            <li>
+                <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <h1 class="page-heading">essai</h1>
+                <h2>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h2>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 </div>
