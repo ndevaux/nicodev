@@ -1,5 +1,5 @@
 # Site settings
-title: nicodev | Nicolas Devaux
+title: nicodev3
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -12,3 +12,20 @@ github_username:  nicodev3
 
 # Build settings
 markdown: kramdown
+# Exclude directories and/or files from the conversion.
+exclude: [node_modules]
+
+#defaults:
+#  -
+#    scope:
+#      path: "" # an empty string here means all files in the project
+#    values:
+#      layout: "default"
+
+#defaults:
+#  -
+#    scope:
+#      path: "" # an empty string here means all files in the project
+#      type: "posts" ou pages, drafts
+#    values:
+#      layout: "default"
