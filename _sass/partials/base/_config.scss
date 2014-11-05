@@ -16,3 +16,16 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 $small:          600px;
 $large:        800px;
+
+$susy: (
+        columns: 12,
+        gutters: 1/2,
+        math: fluid,
+        gutter-position: inside,
+        debug: (
+                image: hide,
+                color: rgba(#bada56, .40),
+                output: background,
+                toggle: top right,
+        ),
+);
