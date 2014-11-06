@@ -1,10 +1,34 @@
 // Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
+// breakpoints
+$small  : 47.938em; //767px
+$medium : 62.000em; //992px
+$large  : 75.000em; //1200px
+// fonts
+$base-font-size: 16px;
+// p
+$fs-p : $base-font-size;
+$lh-p: 1.375em;
+// h1
+$fs-h1--phone   : 2em;
+$lh-h1--phone   : 1.25em;
+$fs-h1--desktop : 2.5em;
+$lh-h1--desktop : 1.05em;
+// h2
+$fs-h2--phone   : 1.625em;
+$lh-h2--phone   : 1.15384615em;
+$fs-h2--desktop : 2.25em;
+$lh-h2--desktop : 1.25em;
+// h3
+$fs-h3--phone   : 1.375em;
+$lh-h3--phone   : 1.1366364em;
+$fs-h3--desktop : 1.75em;
+$lh-h3--desktop : 1.25em;
+// h4
+$fs-h4--phone   : 1.125em;
+$lh-h4--phone   : 1.1111111em;
+$fs-h4--desktop : 1.25em;
+$lh-h4--desktop : 1.25em;
 
 $text-color:       #111;
 $background-color: #fdfdfd;
@@ -14,14 +38,11 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$small:          600px;
-$large:        800px;
-
 $susy: (
         columns: 12,
-        gutters: 1/2,
+        gutters: 1/4,
         math: fluid,
-        gutter-position: inside,
+        gutter-position: outside,
         debug: (
                 image: hide,
                 color: rgba(#bada56, .40),
