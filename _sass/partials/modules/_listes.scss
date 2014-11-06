@@ -1,0 +1,36 @@
+%list-style {
+	line-height : 2em;
+	list-style: none;
+	margin-left: 35px;
+}
+
+.prestations {
+	@extend %list-style;
+	li {
+		&:before {
+			content: "\2713";
+			color: green;
+		}
+	}
+}
+
+.competences {
+	@extend %list-style;
+	li {
+		&:before {
+			content: '\2661';
+			color: pink;
+		}
+	}
+
+}
+
+.outils {
+	@extend %list-style;
+	li {
+		&:before {
+			content: "\2692";
+			color: grey;
+		}
+	}	
+}
