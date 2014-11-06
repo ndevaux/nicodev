@@ -15,7 +15,7 @@ var targetCSSDir = 'css/';
 
 
 gulp.task('styles', function() {
-    return gulp.src(sassDir + '**/*.scss')
+    return gulp.src(sassDir + '/main.scss')
         .pipe(plumber({
             errorHandler: notify.onError("Error: <%= error.message %>")
         }))
