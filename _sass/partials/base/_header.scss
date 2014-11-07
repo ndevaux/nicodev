@@ -1,0 +1,35 @@
+/**
+ * Site header
+ */
+.site-header {
+  border-top    : 5px solid $grey-color-dark;
+  border-bottom : 1px solid $grey-color-light;
+  min-height    : 56px;
+
+  // Positioning context for the mobile navigation icon
+  position      : relative;
+}
+
+.site-title {
+  @include push(1);
+  font-size      : 26px;
+  line-height    : 56px;
+  letter-spacing : -1px;
+  margin-bottom  : 0;
+  height: 150px;
+}
+.v {
+  color: pink;
+}
+.trois {
+  display: inline-block;
+  &:hover {
+  color: pink;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translateY(-34px) translateX(-23px);
+  
+  transition: 2s ease-in;
+  }
+  
+  
+}
