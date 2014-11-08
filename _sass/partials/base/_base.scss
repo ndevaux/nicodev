@@ -1,6 +1,6 @@
-/**
- * Basic styling
- */
+// ==========================================================================
+// Styles basiques
+// ==========================================================================
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -22,11 +22,13 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
+p {
+    line-height: $lh-p;
+}
 
-
-/**
- * Images
- */
+// ==========================================================================
+// Images
+// ==========================================================================
 img {
     max-width: 100%;
     vertical-align: middle;
@@ -80,62 +82,6 @@ blockquote {
         margin-bottom: 0;
     }
 }
-
-
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-
-    @include breakpoint($large) {
-
-    }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
-
-
 
 /**
  * Icons
