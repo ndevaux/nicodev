@@ -50,3 +50,8 @@ $susy: (
                 toggle: top right,
         ),
 );
+
+// calcul des valeurs en em
+@function em($target, $context: 16px) {
+  @return ($target / $context) * 1em;
+}
