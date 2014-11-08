@@ -20,16 +20,18 @@
 }
 .v {
   color: pink;
+  font-size: 1.1em;
 }
 .trois {
+  font-family: "verdana";
   display: inline-block;
-  &:hover {
+  font-size: 0.7em;
   color: pink;
+  
+}
+.v:hover + .trois {
   transform-origin: 0 0;
-  transform: rotate(-90deg) translateY(-34px) translateX(-23px);
+  transform: rotate(-90deg) translateY(-34px) translateX(-24px);
   
   transition: 2s ease-in;
-  }
-  
-  
 }
