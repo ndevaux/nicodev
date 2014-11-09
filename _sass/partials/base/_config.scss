@@ -29,10 +29,17 @@ $fs-h4--phone   : 1.125em;
 $lh-h4--phone   : 1.1111111em;
 $fs-h4--desktop : 1.25em;
 $lh-h4--desktop : 1.25em;
+// couleurs
+$rose           : #C8518D;
+$rose-clair     : #B67CA7;
+$bleu           : #043D74;
+$vert           : #5C8989;
+$blanc          : #F3F3F3;
+
 
 $text-color:       #111;
 $background-color: #fdfdfd;
-$brand-color:      black;
+$brand-color:      $rose;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
