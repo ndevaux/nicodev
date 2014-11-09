@@ -1,0 +1,29 @@
+// ==========================================================================
+// footer
+// ==========================================================================
+.site-footer {
+  
+}
+.footer-container {
+  margin-top: 100px;
+}
+
+.contact-list, .social-media-list {
+  @include push(1);
+  @include breakpoint($small) {
+    @include span(3);
+  }
+}
+
+.text {
+  @include push(1);
+  @include breakpoint($small) {
+    margin-left: 0;
+    @include span(4 last);
+  }
+}
+.contact-list,
+.social-media-list {
+  list-style  : none;
+  padding-left: 0;
+}
