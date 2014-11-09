@@ -41,47 +41,56 @@
 // ==========================================================================
 .content-left, .content-right {
   @include pad(2%);
+  @include breakpoint($small) {
+    padding-top: em(20px);
+  }
 }
 .content-left {
   hyphens : auto;
+  padding-bottom: em(8px);
   @include breakpoint($small) {
     @include span(6);
     @include push(1);
+    padding-bottom: em(52px);
   }
 }
 
 .content-right {
+  padding-bottom: em(29px);
   @include breakpoint($small) {
     @include post(1);
     @include span(3 last);
   }
 }
 
-.rss-subscribe {
-  @include break;
-  @include span(12);
-}
 // ==========================================================================
 // Presta compe tools
 // ==========================================================================
 
 .cv {
-  height: em(310px);
+  
   padding-top: 1em;
   padding-bottom: 1em;
-  background: #FF944D;
+  border-top: $rose-clair solid 1px;
+  /*background: lighten($rose-clair, 10);*/
   @include break;
   @include container(100%);
   @include pad(2%);
   @include breakpoint($small) {
+    height: em(310px);
     padding-top: 2em;
   }
 }
 
 @include breakpoint($small) {
-  %h2 {width: 60%; text-align: center; margin:0 auto; border-bottom: 1px dashed #f2f3f4; color:#f2f3f4; padding-top: 26px;}
-  .presta, .compe, .tools {
-    margin-top: 26px;
+  %h2 {
+    width: 60%; 
+    text-align: center;
+    margin:0 auto;
+    border-bottom: 1px dashed #f2f3f4;
+    color:$vert;
+    padding-top: em(12px);
+    line-height: em(44px);
   }
   .presta {
     h2 {
@@ -107,72 +116,7 @@
 // Portfolio
 // ==========================================================================
 
-/**
- * Site footer
- */
-.site-footer {
-  border-top : 1px solid $grey-color-light;
-  padding    : $spacing-unit 0;
-}
 
-.footer-heading {
-  font-size     : 18px;
-  margin-bottom : $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-  list-style  : none;
-  margin-left : 0;
-}
-
-.footer-col-wrapper {
-  font-size   : 15px;
-  color       : $grey-color;
-  margin-left : -$spacing-unit / 2;
-}
-
-.footer-col {
-  float         : left;
-  margin-bottom : $spacing-unit / 2;
-  padding-left  : $spacing-unit / 2;
-}
-
-.footer-col-1 {
-  width : -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width : calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-  width : -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width : calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width : -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width : calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include breakpoint($large) {
-  .footer-col-1,
-  .footer-col-2 {
-    width : -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width : calc(50% - (#{$spacing-unit} / 2));
-  }
-
-  .footer-col-3 {
-    width : -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width : calc(100% - (#{$spacing-unit} / 2));
-  }
-}
-
-@include breakpoint($small) {
-  .footer-col {
-    float : none;
-    width : -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width : calc(100% - (#{$spacing-unit} / 2));
-  }
-}
 
 /**
  * Page content
