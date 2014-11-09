@@ -2,15 +2,13 @@
 // Header
 // ==========================================================================
 .site-header {
-  border-top    : 5px solid $grey-color-dark;
-  border-bottom : 1px solid $grey-color-light;
+  background    : $bleu;
+  border-top    : 5px solid $vert;
+  border-bottom : 1px solid $vert;
   min-height    : 56px;
 
   // Positioning context for the mobile navigation icon
   position      : relative;
-  a~span {
-    color: yellow;
-  }
 }
 
 .site-title {
@@ -20,22 +18,21 @@
   letter-spacing : -1px;
   margin-bottom  : 0;
   height: 150px;
+  &:hover {
+    text-decoration: none;
+    color: $rose-clair;
+  }
 }
-.v {
-  color: #B2248F;
-  font-size: 1.1em;
-}
+
 .trois {
   font-family: "verdana";
   display: inline-block;
-  font-size: 0.7em;
-  color: #B2248F;
-  
+  font-size: 0.8em;
+  color: $rose-clair;
+
 }
-.v:hover + .trois {
+.trig:hover ~ .trois {
   transform-origin: 0 0;
   transform: rotate(-90deg) translateY(-34px) translateX(-24px);
-  
-  transition: 1s ease-in;
-  transition-delay: 1s;
+  transition: .5s ease-in;
 }
