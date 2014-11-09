@@ -14,7 +14,7 @@
   h1 {
     @include push(1);
     font-size : $fs-h1--phone;
-    color: #fc4f08;
+    color: $rose;
     line-height: 1.1em;
     @include breakpoint($small) {
       font-size: $fs-h1--desktop;
