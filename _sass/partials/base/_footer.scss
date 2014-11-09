@@ -2,10 +2,13 @@
 // footer
 // ==========================================================================
 .site-footer {
-  
+  border-top: 1px solid $vert;
 }
 .footer-container {
   margin-top: 100px;
+  @include breakpoint($small) {
+    margin-top: 50px;
+  }
 }
 
 .contact-list, .social-media-list {

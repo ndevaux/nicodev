@@ -1186,29 +1186,40 @@ blockquote > :last-child {
           transition: .5s ease-in;
 }
 
+/* line 4, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+.site-footer {
+  border-top: 1px solid #5C8989;
+}
+
 /* line 7, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
 .footer-container {
   margin-top: 100px;
 }
+@media (min-width: 47.938em) {
+  /* line 7, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+  .footer-container {
+    margin-top: 50px;
+  }
+}
 
-/* line 11, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+/* line 14, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
 .contact-list, .social-media-list {
   margin-left: 8.47458%;
 }
 @media (min-width: 47.938em) {
-  /* line 11, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+  /* line 14, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
   .contact-list, .social-media-list {
     width: 23.72881%;
     float: left;
   }
 }
 
-/* line 18, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+/* line 21, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
 .text {
   margin-left: 8.47458%;
 }
 @media (min-width: 47.938em) {
-  /* line 18, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+  /* line 21, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
   .text {
     margin-left: 0;
     width: 32.20339%;
@@ -1216,7 +1227,7 @@ blockquote > :last-child {
   }
 }
 
-/* line 25, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+/* line 28, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
 .contact-list,
 .social-media-list {
   list-style: none;
