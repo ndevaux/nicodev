@@ -1,3 +1,4 @@
+/*# sourceMappingURL=main.css.map */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -485,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 /* line 58, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_base.scss */
 a {
-  color: black;
+  color: #C8518D;
   text-decoration: none;
 }
 /* line 62, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_base.scss */
@@ -555,7 +556,7 @@ blockquote > :last-child {
 .bandeau h1 {
   margin-left: 8.47458%;
   font-size: 2em;
-  color: #fc4f08;
+  color: #C8518D;
   line-height: 1.1em;
 }
 @media (min-width: 47.938em) {
@@ -601,25 +602,37 @@ blockquote > :last-child {
   padding-left: 2%;
   padding-right: 2%;
 }
+@media (min-width: 47.938em) {
+  /* line 42, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  .content-left, .content-right {
+    padding-top: 1.25em;
+  }
+}
 
-/* line 45, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 48, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .content-left {
   -webkit-hyphens: auto;
      -moz-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
+  padding-bottom: 0.5em;
 }
 @media (min-width: 47.938em) {
-  /* line 45, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  /* line 48, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
   .content-left {
     width: 49.15254%;
     float: left;
     margin-left: 8.47458%;
+    padding-bottom: 3.25em;
   }
 }
 
+/* line 58, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+.content-right {
+  padding-bottom: 1.8125em;
+}
 @media (min-width: 47.938em) {
-  /* line 53, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  /* line 58, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
   .content-right {
     margin-right: 8.47458%;
     width: 23.72881%;
@@ -627,21 +640,12 @@ blockquote > :last-child {
   }
 }
 
-/* line 60, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-.rss-subscribe {
-  clear: both;
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-/* line 68, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 70, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .cv {
-  height: 19.375em;
   padding-top: 1em;
   padding-bottom: 1em;
-  background: #FF944D;
+  border-top: #B67CA7 solid 1px;
+  /*background: lighten($rose-clair, 10);*/
   clear: both;
   max-width: 100%;
   margin-left: auto;
@@ -656,152 +660,79 @@ blockquote > :last-child {
   clear: both;
 }
 @media (min-width: 47.938em) {
-  /* line 68, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  /* line 70, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
   .cv {
+    height: 19.375em;
     padding-top: 2em;
   }
 }
 
 @media (min-width: 47.938em) {
-  /* line 82, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  /* line 86, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
   .presta h2, .compe h2, .tools h2 {
     width: 60%;
     text-align: center;
     margin: 0 auto;
     border-bottom: 1px dashed #f2f3f4;
-    color: #f2f3f4;
-    padding-top: 26px;
+    color: #5C8989;
+    padding-top: 0.75em;
+    line-height: 2.75em;
   }
 
-  /* line 83, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-  .presta, .compe, .tools {
-    margin-top: 26px;
-  }
-
-  /* line 86, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  /* line 95, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
   .presta {
     width: 32.20339%;
     float: left;
   }
 
-  /* line 92, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  /* line 101, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
   .compe {
     width: 32.20339%;
     float: left;
   }
 
-  /* line 98, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  /* line 107, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
   .tools {
     width: 32.20339%;
     float: left;
   }
 }
 /**
- * Site footer
- */
-/* line 113, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-.site-footer {
-  border-top: 1px solid #e8e8e8;
-  padding: 30px 0;
-}
-
-/* line 118, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-.footer-heading {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-/* line 123, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-.contact-list,
-.social-media-list {
-  list-style: none;
-  margin-left: 0;
-}
-
-/* line 129, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-.footer-col-wrapper {
-  font-size: 15px;
-  color: #828282;
-  margin-left: -15px;
-}
-
-/* line 135, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-.footer-col {
-  float: left;
-  margin-bottom: 15px;
-  padding-left: 15px;
-}
-
-/* line 141, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-.footer-col-1 {
-  width: calc(35% - (30px / 2));
-}
-
-/* line 146, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-.footer-col-2 {
-  width: calc(20% - (30px / 2));
-}
-
-/* line 151, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-.footer-col-3 {
-  width: calc(45% - (30px / 2));
-}
-
-@media (min-width: 75em) {
-  /* line 157, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-  .footer-col-1,
-  .footer-col-2 {
-    width: calc(50% - (30px / 2));
-  }
-
-  /* line 163, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-  .footer-col-3 {
-    width: calc(100% - (30px / 2));
-  }
-}
-@media (min-width: 47.938em) {
-  /* line 170, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
-  .footer-col {
-    float: none;
-    width: calc(100% - (30px / 2));
-  }
-}
-/**
  * Page content
  */
-/* line 180, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 124, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .page-content {
   padding: 30px 0;
 }
 
-/* line 184, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 128, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .page-heading {
   font-size: 20px;
 }
 @media (min-width: 47.938em) {
-  /* line 184, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  /* line 128, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
   .page-heading {
     font-size: 2em;
   }
 }
 
-/* line 191, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 135, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .post-list {
   margin-left: 0;
   list-style: none;
 }
-/* line 195, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 139, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .post-list > li {
   margin-bottom: 30px;
 }
 
-/* line 200, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 144, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .post-meta {
   font-size: 16px;
   color: #828282;
 }
 
-/* line 205, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 149, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .post-link {
   display: block;
   font-size: 24px;
@@ -810,54 +741,54 @@ blockquote > :last-child {
 /**
  * Posts
  */
-/* line 213, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 157, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .post-header {
   margin-bottom: 30px;
 }
 
-/* line 217, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 161, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .post-title {
   font-size: 42px;
   letter-spacing: -1px;
   line-height: 1;
 }
 @media (min-width: 75em) {
-  /* line 217, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  /* line 161, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
   .post-title {
     font-size: 36px;
   }
 }
 
-/* line 227, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 171, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .post-content {
   margin-bottom: 30px;
 }
-/* line 230, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 174, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .post-content h2 {
   font-size: 32px;
 }
 @media (min-width: 75em) {
-  /* line 230, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  /* line 174, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
   .post-content h2 {
     font-size: 28px;
   }
 }
-/* line 238, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 182, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .post-content h3 {
   font-size: 26px;
 }
 @media (min-width: 75em) {
-  /* line 238, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  /* line 182, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
   .post-content h3 {
     font-size: 22px;
   }
 }
-/* line 246, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+/* line 190, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
 .post-content h4 {
   font-size: 20px;
 }
 @media (min-width: 75em) {
-  /* line 246, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
+  /* line 190, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_layout.scss */
   .post-content h4 {
     font-size: 18px;
   }
@@ -1127,12 +1058,11 @@ blockquote > :last-child {
   position: absolute;
   top: 9px;
   right: 30px;
-  background-color: #fdfdfd;
   border: 1px solid #e8e8e8;
   border-radius: 5px;
   text-align: right;
 }
-/* line 13, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
+/* line 12, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
 .site-nav:hover .trigger {
   display: block;
   padding-bottom: 5px;
@@ -1147,23 +1077,23 @@ blockquote > :last-child {
   }
 }
 
-/* line 25, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
+/* line 24, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
 .trigger {
   clear: both;
   display: none;
 }
 @media (min-width: 47.938em) {
-  /* line 25, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
+  /* line 24, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
   .trigger {
     display: block;
   }
-  /* line 29, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
+  /* line 28, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
   .trigger a {
     display: inline-block;
   }
 }
 
-/* line 36, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
+/* line 35, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
 .menu-icon {
   display: block;
   float: right;
@@ -1173,35 +1103,40 @@ blockquote > :last-child {
   padding-top: 10px;
   text-align: center;
 }
-/* line 45, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
+/* line 44, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
 .menu-icon > svg {
   width: 18px;
   height: 15px;
 }
-/* line 49, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
+/* line 48, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
 .menu-icon > svg path {
   fill: #424242;
 }
 @media (min-width: 47.938em) {
-  /* line 36, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
+  /* line 35, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
   .menu-icon {
     display: none;
   }
 }
 
-/* line 58, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
+/* line 57, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
 .page-link {
   display: block;
   padding: 5px 10px;
+  color: #F3F3F3;
+}
+/* line 61, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
+.page-link:hover {
+  color: #F3F3F3;
+  opacity: 0.8;
 }
 @media (min-width: 47.938em) {
-  /* line 58, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
+  /* line 57, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
   .page-link {
     padding: 5px 5px;
-    color: #111;
     line-height: 1.375em;
   }
-  /* line 66, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
+  /* line 69, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_navigation.scss */
   .page-link:not(:first-child) {
     margin-left: 20px;
   }
@@ -1209,17 +1144,14 @@ blockquote > :last-child {
 
 /* line 4, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_header.scss */
 .site-header {
-  border-top: 5px solid #424242;
-  border-bottom: 1px solid #e8e8e8;
+  background: #043D74;
+  border-top: 5px solid #5C8989;
+  border-bottom: 1px solid #5C8989;
   min-height: 56px;
   position: relative;
 }
-/* line 11, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_header.scss */
-.site-header a ~ span {
-  color: yellow;
-}
 
-/* line 16, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_header.scss */
+/* line 14, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_header.scss */
 .site-title {
   margin-left: 8.47458%;
   font-size: 26px;
@@ -1228,33 +1160,67 @@ blockquote > :last-child {
   margin-bottom: 0;
   height: 150px;
 }
-
-/* line 24, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_header.scss */
-.v {
-  color: #B2248F;
-  font-size: 1.1em;
+/* line 21, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_header.scss */
+.site-title:hover {
+  text-decoration: none;
+  color: #B67CA7;
 }
 
-/* line 28, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_header.scss */
+/* line 27, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_header.scss */
 .trois {
   font-family: "verdana";
   display: inline-block;
-  font-size: 0.7em;
-  color: #B2248F;
+  font-size: 0.8em;
+  color: #B67CA7;
 }
 
-/* line 35, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_header.scss */
-.v:hover + .trois {
+/* line 34, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_header.scss */
+.trig:hover ~ .trois {
   -webkit-transform-origin: 0 0;
       -ms-transform-origin: 0 0;
           transform-origin: 0 0;
   -webkit-transform: rotate(-90deg) translateY(-34px) translateX(-24px);
       -ms-transform: rotate(-90deg) translateY(-34px) translateX(-24px);
           transform: rotate(-90deg) translateY(-34px) translateX(-24px);
-  -webkit-transition: 1s ease-in;
-          transition: 1s ease-in;
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
+  -webkit-transition: .5s ease-in;
+          transition: .5s ease-in;
+}
+
+/* line 7, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+.footer-container {
+  margin-top: 100px;
+}
+
+/* line 11, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+.contact-list, .social-media-list {
+  margin-left: 8.47458%;
+}
+@media (min-width: 47.938em) {
+  /* line 11, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+  .contact-list, .social-media-list {
+    width: 23.72881%;
+    float: left;
+  }
+}
+
+/* line 18, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+.text {
+  margin-left: 8.47458%;
+}
+@media (min-width: 47.938em) {
+  /* line 18, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+  .text {
+    margin-left: 0;
+    width: 32.20339%;
+    float: right;
+  }
+}
+
+/* line 25, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/base/_footer.scss */
+.contact-list,
+.social-media-list {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* line 1, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/blog/_liste.scss */
@@ -1263,28 +1229,30 @@ blockquote > :last-child {
 }
 
 /* line 1, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/modules/_listes.scss */
-.prestations, .competences, .outils {
+.competences, .outils, .prestations {
   line-height: 2em;
   list-style: none;
   margin-left: 35px;
+  color: #882b5a;
+  font-weight: 500;
 }
 
-/* line 10, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/modules/_listes.scss */
-.prestations li:before {
-  content: "\2713";
-  color: green;
-}
-
-/* line 20, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/modules/_listes.scss */
+/* line 12, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/modules/_listes.scss */
 .competences li:before {
   content: '\2661';
-  color: pink;
+  color: #d478a6;
 }
 
-/* line 31, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/modules/_listes.scss */
+/* line 23, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/modules/_listes.scss */
 .outils li:before {
   content: "\2692";
-  color: grey;
+  color: #af3774;
+}
+
+/* line 33, ../../../../../../../Users/HomeNico/dev/jekyll/_sass/partials/modules/_listes.scss */
+.prestations li:before {
+  content: "\2713";
+  color: #882b5a;
 }
 
 /**
