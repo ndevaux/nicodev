@@ -1,6 +1,6 @@
 ---
 layout: default
-title: titre perso
+title: 
 h1: Nicolas Devaux, développeur Web
 ---
     <div class="conteneur-haut">
@@ -24,6 +24,7 @@ h1: Nicolas Devaux, développeur Web
                 </li>
                 {% endfor %}
             </ul>
+            <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
         </div>
         <div class="cv">
             <section class="compe">
@@ -59,7 +60,7 @@ h1: Nicolas Devaux, développeur Web
             </ul> 
             </section>
         </div>
-            <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+            
         </div>
     </div>
 
